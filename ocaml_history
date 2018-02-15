@@ -1,0 +1,129 @@
+1;;
+1 + 2;;
+1 * 2;;
+1.0;;
+1.;;
+1.01;;
+1.0 + 2.0;;
+1.0 +. 2.0;;
+1 + 2.;;
+1 +. 2.;;
+1 + inf_of_float(2.0);;
+1 + int_of_float(2.0);;
+'c';;
+"Sujit";;
+"Sujit" + "Chakku";;
+"Sujit" ^ "Chakku";;
+x = 1;;
+let x = 1;;
+let y = 2;;
+x + y;;
+let x = 1;;
+let y = 2;;
+let z = x + y;;
+x;;
+let a = "IIITB" in a;;
+a;;
+if x = 1 then "Sunday" else "Monday";;
+let x = 1 in
+  if x = 1 then print_string "Holiday" else print_string "Work";;
+let x = 1 in
+  let y = 2 in
+    x
+let x =1 in
+  let y = 2 in
+    x + y;;
+let x = 1 in
+  let y = 2 * x in
+    let z = x + 10 * y in
+      z;;
+let m =1 and n = 2 * m in let l = m + n in l;;
+let add x y = x + y;;
+add 1 2;;
+let sub = function x y -> x - y;;
+let sub = fun x y -> x - y;;
+sub 1 2;;
+let dummy x -> ();;
+let dummy x = ();;
+let sub = fun x -> fun y -> x - y;;
+sub 1 2;;
+sub 1;;
+let f = sub 100;;
+f 1;;
+f 3;;
+let g = sub 50;;
+g 1;;
+g 21;;
+1 + 3;;
+let x = 10;;
+let y = 20;;
+x + y;;
+let add x y = x + y;;
+add x y;;
+let a = 10;;
+let f() = a;;
+f();;
+let a = 20;;
+f();;
+let b = 100;;
+let g () = x + y;;
+g();;
+let g () = a + b;;
+g();;
+let y = 1000;;
+g ();;
+f();;
+let fact n = if n = 1 then 1 else n * (fact (n - 1));;
+let rec fact n = if n = 1 then 1 else n * (fact (n - 1));;
+fact 10;;
+#use "sec.ml";;
+fib 3;;
+[1;2;3];;
+["IIITH"; "IIITB"; "IIT"];;
+["IIITH"; "IIITB"; "IIT";];;
+List.length [1;2];;
+List.length [];;
+let insts = ["IIITH"; "IIITB"; "IIT";];;
+insts
+;;
+List.length insts;;
+List.hd insts;;
+List.tl insts;;
+List.hd (List.tl insts);;
+List.nth;;
+List.nth insts 2;;
+List.nth insts 3;;
+List.hd [];;
+List.tl [];;
+List.tl [1];;
+"IIITI" :: insts;;
+[1;2.0;"IIITB"];;
+(1, 2, 3);;
+(1,2.0,"IIITB");;
+insts;;
+let l = "IIITI" :: insts;;
+l
+;;
+insts;;
+insts = [];;
+1 + 2; 2 + 3;
+;
+;;
+print_int 1;;
+let x = 1 in
+let y = x + 2 in
+x + y;;
+let rec print_n_times m n =
+  if n = 0 then ()
+  else
+    let _ = print_string m in
+    print_n_times m (n - 1);;
+print_n_times "Hello world!" 10;;
+let print_hw = print_n_times "Hello world";;
+print_hw 10;;
+print_hw 15;;
+let rec print_n_times m n =
+  if n = 0 then ()
+  else
+    print_string m;
+    print_n_times m (n - 1);;
